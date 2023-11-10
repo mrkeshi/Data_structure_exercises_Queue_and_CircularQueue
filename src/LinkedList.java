@@ -36,4 +36,27 @@ public class LinkedList {
         }
     }
 
+//    public Node SearchByKey(int data){
+//        Node Cr=head;
+//        while (Cr!=null){
+//        if (Cr.value==data){
+//        //
+//        }
+//        }
+//        return 000;
+//    }
+    public void reverse(){
+        Node previous = null;
+        Node Current=head;
+        while (Current!=null){
+            Node nextElement=Current.next;
+            Current.next=previous;
+            previous=Current;
+            Current=nextElement;
+        }
+    head=previous;
+
+
+
+    }
 }

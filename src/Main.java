@@ -11,7 +11,7 @@ public class Main {
         myLinkedList.Insert(3);
         myLinkedList.Insert(4);
         myLinkedList.Insert(5);
-        myLinkedList.DeleteWithValue(3);
+        myLinkedList.reverse();
         myLinkedList.PrintLinkedList();
         MyQueue myqueue=new MyQueue();
 //        myqueue.Enqueue(23);
