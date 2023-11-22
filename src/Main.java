@@ -2,43 +2,16 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) throws Exception {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
 
-        LinkedList myLinkedList=new LinkedList();
-        myLinkedList.Insert(1);
-        myLinkedList.Insert(2);
-        myLinkedList.Insert(3);
-        myLinkedList.Insert(4);
-        myLinkedList.Insert(5);
-        StackUsingLinkedlist st=new StackUsingLinkedlist();
-        st.push(23);
-        st.push(24);
-        st.push(25);
-        st.push(26);
-        st.push(27);
-        System.out.println(st.pop());
-        System.out.println(st.pop());
-        st.display();
-//        myLinkedList.reverse();
-//        myLinkedList.PrintLinkedList();
-//        MyQueue myqueue=new MyQueue();
-//        myqueue.Enqueue(23);
-//        myqueue.Enqueue(233);
-//        myqueue.Enqueue(234);
-//        myqueue.Enqueue(235);
-////        System.out.println(myqueue.peek());
-//        CircularQueue cq=new CircularQueue();
-//        cq.Enqueue(34);
-//        cq.Enqueue(12);
-//        cq.Enqueue(340);
-//        cq.Enqueue(345);
-//        cq.Enqueue(344);
-//        cq.Enqueue(342);
-//        cq.Enqueue(346);
-//        cq.Enqueue(342);
-//        cq.Enqueue(348);
+            Graph Graph=new Graph(5);
+            Graph.matrix= new int[][]{
+                    {0, 1, 0, 0, 1},
+                    {1, 0, 1, 0, 0},
+                    {0, 1, 0, 1, 0},
+                    {0, 0, 1, 0, 1},
+                    {1, 0, 1, 1, 0},
+            };
+            Graph.degCalculateGraph(1);
 
-//        System.out.println(new ReversString().revers("1234"));
     }
 }

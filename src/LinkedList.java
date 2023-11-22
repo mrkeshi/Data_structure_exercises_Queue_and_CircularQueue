@@ -35,6 +35,17 @@ public class LinkedList {
             Current=Current.next;
         }
     }
+    public void reverseLinkedList(){
+    Node previous=null;
+    Node current=head;
+    while (current!=null){
+        Node nextElement=current.next;
+        current.next=previous;
+        previous=current;
+        current=nextElement;
+    }
+    head=previous;
+    }
 
 //    public Node SearchByKey(int data){
 //        Node Cr=head;
