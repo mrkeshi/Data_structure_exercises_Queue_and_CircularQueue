@@ -70,4 +70,20 @@ public class Three {
         }
 
     }
+    public static void PostOrder(Node root){
+        Node Current=root;
+        Stack<Node> st=new Stack<Node>();
+        Stack<Node> result=new Stack<Node>();
+        st.push(root);
+        while (!st.isEmpty()){
+            Current=st.pop();
+            result.push(Current);
+            if (Current.prev!=null){
+                st.push(Current.prev);
+            }
+            if (Current.next!=null){
+                st.push(Current.next);
+            }
+        }
+    }
 }
